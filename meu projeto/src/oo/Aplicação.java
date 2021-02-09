@@ -27,7 +27,7 @@ public class Aplicação {
         System.out.println("");*/
 
         //Exercício 2
-        System.out.println("Exercício 2: classe Comparador");
+        /*System.out.println("Exercício 2: classe Comparador");
         Comparador comparador = new Comparador();
         boolean resultadoComparador1 = comparador.menorQue(1, 2);
         boolean resultadoComparador2 = comparador.menorQue(1, 1);
@@ -35,7 +35,22 @@ public class Aplicação {
         System.out.println("É menor? "+resultadoComparador1);
         System.out.println("É menor? "+resultadoComparador2);
         System.out.println("É menor? "+resultadoComparador3);
+        System.out.println("");*/
+
+        //Exercício 3
+        System.out.println("Exercício 3: classe Aluno(Gerenciador de notas)");
         System.out.println("");
 
+        Aluno aluno1 = new Aluno("Pedro",6);
+        System.out.println("O(a) aluno(a) "+aluno1.getNome()+" obteve nota final "+ aluno1.getNotaFinal()+ " e está "+ aluno1.getSituacaoDoAluno());
+        System.out.println("");
+
+        Aluno aluno2 = new Aluno("Maria",7);
+        System.out.println("O(a) aluno(a) "+aluno2.getNome()+" obteve nota final "+ aluno2.getNotaFinal()+ " e está "+ aluno2.getSituacaoDoAluno());
+        System.out.println("");
+
+        Aluno aluno3 = new Aluno("Antônia",10);
+        System.out.println("O(a) aluno(a) "+aluno3.getNome()+" obteve nota final "+ aluno3.getNotaFinal()+ " e está "+ aluno3.getSituacaoDoAluno());
+        System.out.println("");
     }
 }
