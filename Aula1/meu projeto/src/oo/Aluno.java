@@ -23,15 +23,5 @@ public class Aluno {
         String s = (notaFinal >= 7)?"aprovado(a).":"reprovado(a).";
         return s;
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setNotaFinal(int notaFinal) {
-        this.notaFinal = notaFinal;
-    }
-
-    //System.out.println( notaFinal >= 7? "Aluno está aprovado!": "Aluno está reprovado!")
 }
 

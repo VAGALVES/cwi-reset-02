@@ -38,6 +38,7 @@ public class Aplicação {
         System.out.println("");*/
 
         //Exercício 3
+
         System.out.println("Exercício 3: classe Aluno(Gerenciador de notas)");
         System.out.println("");
 
