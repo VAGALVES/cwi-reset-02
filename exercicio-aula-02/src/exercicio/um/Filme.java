@@ -19,7 +19,7 @@ public class Filme {
         this.diretor = diretor;
     }
 
-    public void exibir(){
+    public void reproduzir(){
         System.out.println("Nome do filme: "+this.nome);
         System.out.println("Descrição: "+this.descricao);
         System.out.println("Duração: "+this.duracao);

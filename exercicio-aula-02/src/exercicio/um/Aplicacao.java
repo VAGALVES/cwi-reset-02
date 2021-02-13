@@ -12,7 +12,7 @@ public class Aplicacao {
         Filme filme02 = new Filme("Spider man", "Melhor filme (2002)", 2002, 105,
                 4,diretor2);
 
-        filme01.exibir();
-        filme02.exibir();
+        filme01.reproduzir();
+        filme02.reproduzir();
     }
 }
