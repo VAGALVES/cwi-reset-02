@@ -14,33 +14,33 @@ public class PropostaFinanciamento {
 
         if (UnidadeFederativa.SP == imovel.getEndereco().getEstado()) {
             if (beneficiario.getSalario() * prazoDoFinanciamento >= imovel.getValor() * 0.65) {
-                imprimirPropostaAprovada();
+                PropostaAprovada();
             } else {
-                imprimirPropostaNegada();
+                PropostaNegada();
             }
         } else if (UnidadeFederativa.RJ.equals(imovel.getEndereco().getEstado())) {
             if (beneficiario.getSalario() * prazoDoFinanciamento >= imovel.getValor() * 0.6) {
-                imprimirPropostaAprovada();
+                PropostaAprovada();
             } else {
-                imprimirPropostaNegada();
+                PropostaNegada();
             }
         } else {
             if (beneficiario.getSalario() * prazoDoFinanciamento >= imovel.getValor() * 0.5) {
-                imprimirPropostaAprovada();
+                PropostaAprovada();
             } else {
-                imprimirPropostaNegada();
+                PropostaNegada();
             }
         }
 
     }
 
-    private void imprimirPropostaAprovada() {
-        System.out.println("PROPOSTA APROVADA! Subiu o nível");
+    private void PropostaAprovada() {
+        System.out.println("PROPOSTA APROVADA! Parabéns, subiu o nível!");
         System.out.println("\n* Sortudo: "+beneficiario.getNome()+"\n* Imóvel: "+imovel.getEndereco()+"\n* Prazo: "+prazoDoFinanciamento+" meses.");
     }
 
-    private void imprimirPropostaNegada() {
-        System.out.println("Deum ruim, PROPOSTA NEGADA! Fracassado, nem isso você consegue!");
+    private void PropostaNegada() {
+        System.out.println("Deu ruim, PROPOSTA NEGADA! Fracassado, nem isso você consegue!");
         System.out.println("\n* Fracassado: "+beneficiario.getNome()+"\n* Imóvel: "+imovel.getEndereco()+"\n* Prazo: "+prazoDoFinanciamento+" meses.");
     }
 }
