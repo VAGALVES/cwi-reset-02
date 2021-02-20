@@ -14,7 +14,7 @@ public class ImoveisParaFinanciamento {
         if (imovel.getValor() >= 50000.0 && imovel.getValor() <= 1000000.0) {
             imoveis.add(imovel);
         } else {
-            System.out.println(" > Atenção, problema de registro! Imóveis com valor R$ "+imovel.getValor()+" não são aceitos no programa.");
+            System.out.println("Não serão contemplados no programa os imóveis com valor de R$: "+imovel.getValor());
         }
     }
 
