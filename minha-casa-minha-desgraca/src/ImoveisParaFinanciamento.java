@@ -10,19 +10,20 @@ public class ImoveisParaFinanciamento {
     }
 
     public void registrarImovel(Imovel imovel) {
+
         if (imovel.getValor() >= 50000.0 && imovel.getValor() <= 1000000.0) {
             imoveis.add(imovel);
         } else {
-            System.out.println(" Olá! não aceitamos em nosso programa imóveis que compreendem o valor de R$ "+imovel.getValor());
+            System.out.println(" > Atenção, problema de registro! Imóveis com valor R$ "+imovel.getValor()+" não são aceitos no programa.");
         }
     }
 
-    public List<Imovel> buscarOpcoes(double valorLimiteDoPrograma) {
+    public List<Imovel> buscarOpcoes(double valorLimite) {
 
         List<Imovel> opcoes = new ArrayList<>();
 
         for (Imovel imovel : imoveis) {
-            if (imovel.getValor() <= valorLimiteDoPrograma) {
+            if (imovel.getValor() <= valorLimite) {
                 opcoes.add(imovel);
             }
         }
